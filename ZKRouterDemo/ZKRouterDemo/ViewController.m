@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ZKRouter.h"
+#import "ZKRouter-PublicProtocol.h"
 
 @interface ViewController ()
 
@@ -18,6 +20,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+}
+
+- (IBAction)clickButton:(UIButton *)sender {
+    
+    NSString *urlStr = @"Scheme://ModuleDetail/detailVC?vcTitle=(test)";
+    NSURL *url = [NSURL URLWithString:urlStr];
+    id<ModuleVCProtocol> vc = [[ZKRouter shareInstance] interfaceForURL:url];
+    vc.interface.callbackBlock = ^(id parameter) {
+        NSLog(@"%@", parameter);
+    };
+    [self.navigationController pushViewController:vc animated:true];
     
 }
 

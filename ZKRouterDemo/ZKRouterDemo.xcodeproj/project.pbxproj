@@ -13,6 +13,10 @@
 		352AAE3D221E45FB0006F470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352AAE3C221E45FB0006F470 /* Assets.xcassets */; };
 		352AAE40221E45FB0006F470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352AAE3E221E45FB0006F470 /* LaunchScreen.storyboard */; };
 		352AAE43221E45FB0006F470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352AAE42221E45FB0006F470 /* main.m */; };
+		352AAE4C221E47790006F470 /* ZKRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 352AAE4B221E47790006F470 /* ZKRouter.m */; };
+		352AAE53221E499B0006F470 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352AAE52221E499B0006F470 /* DetailViewController.m */; };
+		352AAE56221E4B520006F470 /* ModuleDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 352AAE55221E4B520006F470 /* ModuleDetail.m */; };
+		352AAE5F221E70FB0006F470 /* NSObject+ZKDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 352AAE5D221E70FB0006F470 /* NSObject+ZKDeallocBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		352AAE3F221E45FB0006F470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352AAE41221E45FB0006F470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352AAE42221E45FB0006F470 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		352AAE4A221E47790006F470 /* ZKRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRouter.h; sourceTree = "<group>"; };
+		352AAE4B221E47790006F470 /* ZKRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKRouter.m; sourceTree = "<group>"; };
+		352AAE50221E47CC0006F470 /* ZKRouter-PublicProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZKRouter-PublicProtocol.h"; sourceTree = "<group>"; };
+		352AAE51221E499B0006F470 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		352AAE52221E499B0006F470 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		352AAE54221E4B520006F470 /* ModuleDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDetail.h; sourceTree = "<group>"; };
+		352AAE55221E4B520006F470 /* ModuleDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleDetail.m; sourceTree = "<group>"; };
+		352AAE5D221E70FB0006F470 /* NSObject+ZKDeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZKDeallocBlock.m"; sourceTree = "<group>"; };
+		352AAE5E221E70FB0006F470 /* NSObject+ZKDeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZKDeallocBlock.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 		352AAE32221E45F80006F470 /* ZKRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				352AAE49221E47660006F470 /* Classes */,
 				352AAE33221E45F80006F470 /* AppDelegate.h */,
 				352AAE34221E45F80006F470 /* AppDelegate.m */,
 				352AAE36221E45F80006F470 /* ViewController.h */,
@@ -69,6 +83,23 @@
 				352AAE42221E45FB0006F470 /* main.m */,
 			);
 			path = ZKRouterDemo;
+			sourceTree = "<group>";
+		};
+		352AAE49221E47660006F470 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				352AAE5E221E70FB0006F470 /* NSObject+ZKDeallocBlock.h */,
+				352AAE5D221E70FB0006F470 /* NSObject+ZKDeallocBlock.m */,
+				352AAE4A221E47790006F470 /* ZKRouter.h */,
+				352AAE4B221E47790006F470 /* ZKRouter.m */,
+				352AAE50221E47CC0006F470 /* ZKRouter-PublicProtocol.h */,
+				352AAE54221E4B520006F470 /* ModuleDetail.h */,
+				352AAE55221E4B520006F470 /* ModuleDetail.m */,
+				352AAE51221E499B0006F470 /* DetailViewController.h */,
+				352AAE52221E499B0006F470 /* DetailViewController.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352AAE53221E499B0006F470 /* DetailViewController.m in Sources */,
 				352AAE38221E45F80006F470 /* ViewController.m in Sources */,
 				352AAE43221E45FB0006F470 /* main.m in Sources */,
 				352AAE35221E45F80006F470 /* AppDelegate.m in Sources */,
+				352AAE56221E4B520006F470 /* ModuleDetail.m in Sources */,
+				352AAE4C221E47790006F470 /* ZKRouter.m in Sources */,
+				352AAE5F221E70FB0006F470 /* NSObject+ZKDeallocBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
