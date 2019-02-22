@@ -35,5 +35,13 @@
     
 }
 
+- (IBAction)clickButton2:(UIButton *)sender {
+    
+    id<ModuleDetail> module = [[ZKRouter shareInstance] interfaceForProtocol:@protocol(ModuleDetail)];
+    [self.navigationController pushViewController:module.detailVC animated:true];
+
+    
+}
+
 
 @end

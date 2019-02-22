@@ -30,11 +30,25 @@
                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAI-CV-DFr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rv-z8-5tH">
+                                <rect key="frame" x="127.5" y="388.5" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.85052115080000001" green="0.3101061256" blue="0.15231067270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="GvX-X4-iXJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Rkf-Py-vyP"/>
+                                </constraints>
+                                <state key="normal" title="Button2"/>
+                                <connections>
+                                    <action selector="clickButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ZF-nt-IHF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QGf-xd-Fbq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dv6-6V-wbx"/>
                             <constraint firstItem="QGf-xd-Fbq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IN4-Lo-x99"/>
+                            <constraint firstItem="3Rv-z8-5tH" firstAttribute="top" secondItem="QGf-xd-Fbq" secondAttribute="bottom" constant="30" id="Vjm-Rt-EQE"/>
+                            <constraint firstItem="3Rv-z8-5tH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kDi-9s-B9f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
